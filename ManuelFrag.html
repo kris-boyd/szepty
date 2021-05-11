@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Able Player Audio Demo #4</title>
+<link rel="stylesheet" href="demos.css" type="text/css">
+
+<!-- Dependencies -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="../thirdparty/js.cookie.js"></script>
+
+<!-- Able Player CSS -->
+<link rel="stylesheet" href="../build/ableplayer.min.css" type="text/css"/>
+
+<!-- Able Player JavaScript -->
+<script src="../build/ableplayer.js"></script>
+
+</head>
+
+
+<body>
+
+<!-- use the following markup for each media element -->
+  <div>
+<audio id="audio1" class="ump-media" preload="auto" data-able-player data-skin="2020" data-transcript-div="transcript-window" data-lyrics-mode data-transcript-title="Sing along!">
+
+  <source type="audio/mpeg" src="../media/Manuel-Frag-V3.mp3"/>
+  <track kind="captions" src="../media/V-Intro-V1.0-APR28-2021.vtt" srclang="en" label="English"/>
+</audio>
+  </div>
+  <div id="transcript-window"></div>
+
+</body>
+</html>
