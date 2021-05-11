@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Able Player Audio Demo #4</title>
+<link rel="stylesheet" href="demos.css" type="text/css">
+
+<!-- Dependencies -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="../thirdparty/js.cookie.js"></script>
+
+<!-- Able Player CSS -->
+<link rel="stylesheet" href="../build/ableplayer.min.css" type="text/css"/>
+
+<!-- Able Player JavaScript -->
+<script src="../build/ableplayer.js"></script>
+
+</head>
+
+<body>
+
+
+  <div>
+
+    <!-- use the following markup for each media element -->
+<audio id="audio1" preload="auto" data-able-player data-skin="2020" data-transcript-div="transcript-window" data-lyrics-mode>
+  <!-- source elements are optional when there's a playlist. -->
+	<!-- If ommitted, they will be constructed from the first playlist item -->
+</audio>
+
+<!-- use the following markup for each playlist -->
+<!-- an AblePlayer playlist is any <ul> with class="able-playlist" -->
+<!-- The value of data-player must match the id of the media element -->
+<!-- Add data-embedded to embed the playlist into the media player -->
+<!-- see documentation for additional details about markup -->
+<ul class="able-playlist" data-player="audio1" data-embedded>
+  <li>
+  	<span class="able-source"
+  		data-type="audio/mpeg"
+			data-src="../media/Jivesh - [V1.0].mp3"></span>
+  	<button>Jiv</button>
+  </li>
+  <li>
+  	<span class="able-source"
+  		data-type="audio/mpeg"
+			data-src="../media/mia-Full-[V1.0].mp3"></span> 	
+  	<button>mia</button>
+  </li>
+  
+  <li>
+  	<span class="able-source"
+  		data-type="audio/mpeg"
+			data-src="../media/Manuel [whisper].mp3"></span>
+  	
+  	<button>Manuel</button>
+  </li>
+    <li>
+  	<span class="able-source"
+  		data-type="audio/mpeg"
+  	  data-src="../media/V-Intro-[V1.0-APR28-2021].mp3">
+       </span>
+	<button>V-Intro</button>
+	    
+      <span class="able-track" 
+       data-kind="captions" 
+       data-src="../media/V-Intro-V1.0-APR28-2021.vtt" 
+       data-srclang="en" 
+       data-label="English"></span>
+     
+  	
+  </li>
+</ul>
+  </div>
+  
+  <div id="transcript-window"></div>
+
+</body>
+</html>
